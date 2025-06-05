@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГЛАВНАЯ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="HOME.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="headerLeft">
+            <img src="images/логотип оранжевый.png" alt="Logo" width="332" height="50">
+            <div class="headerRight">
+                <button class="btn" onclick="redirectToPage('Home page.html')"><p><font face="Unbounded Medium">ГЛАВНАЯ</font></p></button>
+                <button class="btn" onclick="redirectToPage('About us page.html')"><p><font face="Unbounded Medium">О САЛОНЕ</font></p></button>
+                <button class="btn" onclick="redirectToPage('Services page.html')"><p><font face="Unbounded Medium">УСЛУГИ</font></p></button>
+                <button class="btn" onclick="redirectToPage('Employees page.html')"><p><font face="Unbounded Medium">МАСТЕРА</font></p></button>
+                <button class="btn" onclick="redirectToPage('Shop page.html')"><p><font face="Unbounded Medium">МАГАЗИН</font></p></button>
+            </div>
+        </div>
+    </header>
+    <div class="images-container">
+        <div class="dog-image">
+            <img src="images/собачка_Главная.png" alt="Собака" width="582" height="739">
+        </div>
+    </div>
+
+   <div class="grid-container">
+        <div class="grid-item image-item">
+            <img src="images/Заставка.png" alt="Описание изображения">
+        </div>
+        <div class="grid-item second-row-item">
+            <h3>Заботимся о вашем питомце ка​к о своем</h3>
+        </div>
+        <div class="grid-item text-item">
+            <h5>6</h5>
+        </div>
+        <div class="grid-item text-item">
+            <h5>4</h5>
+        </div>
+        <div class="grid-item text-item">
+            <h5>2000</h5>
+        </div>
+        <div class="grid-item text-item">
+            <h6>лет нашей студии</h6>
+        </div>
+        <div class="grid-item text-item">
+            <h6>грумера в нашей команде</h6>
+        </div>
+        <div class="grid-item text-item">
+            <h6>довольных клиентов</h6>
+        </div>
+    </div>
+
+<div class="second-image-container">
+        <img src="images/фон_главная.png" alt="Второе изображение" width="1410" height="1002" >
+    </div>
+
+    <p> <img src="images/фон2_главная.png" alt="Фон" width="1412" height="770" style="position: relative; left: 183px;" </p>
+
+ <div class="form-container">
+        <h2><span style="color:#db5f23">Записаться онлайн</span></h2>
+        <form id="appointmentForm">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+            </div>
+            <div class="form-group">
+                <label for="procedure">Процедура:</label>
+                <select id="procedure" name="procedure" required>
+                    <option value="" disabled selected>Выберите процедуру</option>
+                    <option value="procedure1">Уход за кожей и шерстью</option>
+                    <option value="procedure2">Маникюр и уход за лапами</option>
+                    <option value="procedure3">Стрижка</option>
+                    <option value="procedure4">Очищение ушей и глаз</option>
+                    <option value="procedure5">Грязевая ванна и массаж</option>
+                    <option value="procedure6">Криотерапия</option>
+                    <option value="procedure7">Гидротерапия и аквамассаж</option>
+                    <option value="procedure8">Ароматерапия</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="button" id="submitButton" onclick="trySubmitForm()">ЗАПИСАТЬСЯ</button>
+                <div id="hint" class="hint">Пожалуйста, заполните все поля формы.</div>
+                <div id="successMessage" class="success-message">Заявка отправлена!</div>
+            </div>
+        </form>
+    </div>
+
+<div class=services-container>
+      <div class=inner-container>
+        <h1 class=section-title>Последние новости салона</h1>
+        <div class=border></div>
+        <div class=service-container>
+          <div class=service-box>
+            <div class=service-icon>
+              <img src="images/Ellipse 6(2).png" />
+            </div>
+            <div class=service-title>
+              <b><font face="Unbounded Blond">Онлайн магазин</font></b>
+            </div>
+            <div class=description><font face="Montserrat Light">Новые премиальные товары для Вашего питомца появились в нашем магазине. Товары в ограниченном тираже, успейте приобрести! </font> </div>
+          </div>
+          <div class=service-box>
+            <div class=service-icon>
+              <img src="images/Ellipse 8.png"/>
+            </div>
+            <div class=service-title>
+              <b><font face="Unbounded Blond">Новый грумер в нашей команде</font></b>
+            </div>
+            <div class=description><font face="Montserrat Light">Мы рады приветствовать нового профессионального грумера в нашей команде. Еще больше возможностей для ухода за вашими питомцами! </font> </div>
+          </div>
+          <div class=service-box>
+            <div class=service-icon>
+              <img src="images/Ellipse 7.png"/>
+            </div>
+            <div class=service-title>
+              <b><font face="Unbounded Blond">Ежемесячное мероприятие</font></b>
+            </div>
+            <div class=description><font face="Montserrat Light">Мы рады приветствовать нового профессионального грумера в нашей команде. Теперь еще больше возможностей для ухода за вашими питомцами! </font></div>
+          </div>
+ <div class=service-box>
+            <div class=service-icon>
+              <img src="images/Ellipse 9.png" />
+            </div>
+            <div class=service-title>
+              <b><font face="Unbounded Blond">Новая SPA услуга</font></b>
+            </div>
+            <div class=description><font face="Montserrat Light">Новая услуга ароматерипии для вашего питомца. Этот метод может помочь снизить уровень стресса, тревожности и даже улучшить общее самочувствие животного.</font></div>
+          </div>
+          <div class=service-box>
+            <div class=service-icon>
+              <img src="images/изображение(1).png" />
+            </div>
+            <div class=service-title>
+              <b><font face="Unbounded Blond">Бесплатная консультация</font></b>
+            </div>
+            <div class=description><font face="Montserrat Light"> Получите бесплатную консультацию от нашего штатного ветеринара при первом посещении нашего салона. Врач даст вам рекомендации на необходимые услуги.</font></div>
+          </div>
+          <div class=service-box>
+            <div class=service-icon>
+              <img src="images/изображение(2).png" />
+            </div>
+            <div class=service-title>
+              <b><font face="Unbounded Blond">Новые посты</font></b>
+            </div>
+            <div class=description> <font face="Montserrat Light">Подписывайтесь на телеграмм канал нашего салона. Следите на новостями и узнавайте о наших акциях и новинках самыми первыми. </font></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+<script src="Script.js"></script>
+
+</html>

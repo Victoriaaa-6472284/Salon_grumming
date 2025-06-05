@@ -1,0 +1,64 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: #F2F2F2;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.headerLeft img {
+    margin-right: 10px;
+}
+
+.headerRight {
+    display: flex;
+    gap: 30px; /* Расстояние между кнопками */
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.btn {
+    display: flex; /* Добавлено для поддержки justify-content и align-items */
+    transition: all 0.3s ease 0s;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px 30px;
+    background-color: #DB5F23;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    right: 20px;
+    border: 2px solid #F2F2F2;
+}
+
+.btn:hover {
+    background-color: #e08452;
+    border-radius: 30px 2px;
+    border: 2px solid #F2F2F2;
+}
+
+
+.btn p {
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+

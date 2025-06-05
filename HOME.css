@@ -1,0 +1,224 @@
+.images-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 90%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .dog-image {
+            flex: 1;
+            margin-top: 110px;
+            margin-left: 827px;
+        }
+
+ .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 170px 378px 80px 80px; /* Задайте высоты строк */
+            gap: 0px;
+            width: 760px;
+            height: 726px;
+            margin: -741px 20px 20px 182px;
+
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-item {
+            grid-column: 1 / span 3;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .second-row-item {
+            grid-column: 1 / span 3; /* Объединение всех ячеек второй строки */
+            text-align: center;
+        }
+
+        .text-item {
+            text-align: center;
+            background-color: #F6F6F6; /* Цвет фона для остальных ячеек */
+        }
+
+h3 {
+         font-family: 'Unbounded Blond';
+         color: #111111; /* Задает цвет текста */
+         font-size: 30px; /* Задает размер шрифта */
+         font-weight: bold; /* Задает насыщенность шрифта */
+}
+
+h5 {
+         font-family: 'Unbounded Blond';
+         color: #DB5F23; /* Задает цвет текста */
+         font-size: 40px; /* Задает размер шрифта */
+         font-weight: bold; /* Задает насыщенность шрифта */
+}
+
+h6 {
+         font-family: 'Montserrat Light';
+         color: #111111; /* Задает цвет текста */
+         font-size: 18px; /* Задает размер шрифта */
+}
+
+
+.second-image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 10%;
+            margin-right: 10%;
+}
+
+.form-container {
+            position: absolute;
+            top: 235%;
+            left: 65%;
+            font-family: 'Unbounded Blond', sans-serif;
+            transform: translate(-50%, -50%);
+            width: 25%;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #E5E5E5;
+            z-index: 10;
+        }
+
+        .form-container h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            font-family: 'Montserrat Light', sans-serif;
+            color: #383838;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #db5f23;
+            font-family: 'Unbounded Blond', sans-serif;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button:disabled {
+            background-color: #e08452;
+            cursor: not-allowed;
+        }
+
+        .form-group button:hover:not(:disabled) {
+            background-color: #BABABA;
+        }
+
+        .hint {
+            color: #f25f10;
+            font-family: 'Montserrat Medium', sans-serif;
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .success-message {
+            color: #f25f10;
+            font-family: 'Montserrat Medium', sans-serif;
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+        }
+
+.services-container {
+  background-size: cover;
+  padding: 30px 0;
+  width: 1440;
+
+}
+
+.inner-container {
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: 'Unbounded Blond';
+}
+
+.border {
+  width: 460px;
+  height: 2px;
+  background: #db5f23;
+  margin: 20px auto;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1440;
+  margin-top: 0px;
+
+}
+
+.service-box {
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #161616;
+}
+
+.service-icon {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #db5f23;
+  margin-bottom: 30px;
+  margin-top: 16px;
+  border-radius: 50%;
+}
+
+.service-icon i {
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+
+.service-title {
+  font-size: 18px;
+  color: #DB5F23;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  .descriptionfont-size: 14px;
+}
+

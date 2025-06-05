@@ -1,0 +1,131 @@
+h1 {
+            font-family: 'Unbounded Blond';
+            color: #111111; /* Задает цвет текста */
+            font-size: 45px; /* Задает размер шрифта */
+            font-weight: bold; /* Задает насыщенность шрифта */
+            margin: 7% 0 0 10%; 
+        }
+
+h2 {
+            font-family: 'Unbounded Blond';
+            color: #111111; /* Задает цвет текста */
+            font-size: 45px; /* Задает размер шрифта */
+            font-weight: bold; /* Задает насыщенность шрифта */
+            margin: 40px 0 0 10%; 
+        }
+
+
+
+.custom-image {
+            margin-left: 390px; /* Сдвигает изображение вправо */
+            border-radius: 10px; /* Скругление углов */
+        }
+
+.custom-image2 {
+            border-radius: 10px; /* Скругление углов */
+            position: relative;
+            left: 300px;
+        }
+
+.custom-image3 {
+            border-radius: 10px; /* Скругление углов */
+            position: relative;
+            left: 310px;
+            top: 30px;
+        }
+
+.custom-image4 {
+            border-radius: 10px; /* Скругление углов */
+            position: relative;
+            left: 210px;
+            top: 30px;
+        }
+
+
+   .round-button {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: #db5f23;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            position: absolute;
+        }
+
+        .round-button:hover {
+            background-color: #e08452;
+        }
+
+        .popup {
+            position: fixed;
+            width: 890px;
+            height: 600px;
+            background-color: rgba(223, 108, 45, 0.4);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            border-radius: 20px;
+        }
+
+        .popup.active {
+            display: flex;
+        }
+
+        .popup .content {
+            position: relative;
+            background: #dfdfdf;
+            padding: 20px;
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 20px;
+        }
+
+        .popup .close-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            color: white;
+            font-size: 20px;
+            background: #db5f23;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .popup p, .popup h1, .popup ol {
+            color: #666;
+            line-height: 1.6;
+            font-family: 'Montserrat Light', sans-serif;
+        }
+
+        .popup h1 {
+            color: #db5f23;
+        }
+
+        .button-1 { top: 980px; left: 606px; }
+        .button-2 { top: 976px; left: 1007px; background-color: #e7ac8b; }
+        .button-3 { top: 980px; left: 1410px; }
+        .button-4 { top: 1520px; left: 1009px;  }
+        .button-5 { top: 1895px; left: 604px; }
+        .button-6 { top: 1895px; left: 1005px; background-color: #e7ac8b; }
+        .button-7 { top: 2440px; left: 1000px; }
+        .button-8 { top: 1895px; left: 1407px; }
+
+        .popup-1 { top: 400px; left: 320px; }
+        .popup-2 { top: 400px; left: 400px; }
+        .popup-3 { top: 400px; left: 400px; }
+        .popup-4 { top: 500px; left: 500px; }
+        .popup-5 { top: 400px; left: 520px; }
+        .popup-6 { top: 400px; left: 520px; }
+        .popup-7 { top: 500px; left: 420px; }
+        .popup-8 { top: 400px; left: 520px; }

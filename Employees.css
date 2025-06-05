@@ -1,0 +1,208 @@
+h1 {
+    font-family: 'Unbounded Blond';
+    color: #111111;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 7% 0 0 10%;
+}
+
+h2 {
+    font-family: 'Unbounded Blond';
+    color: #111111;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 940px 0 0 10%;
+}
+
+h3 {
+    font-family: 'Unbounded Blond';
+    color: #111111;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 80px 0 0 10%;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+.list {
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -20%);
+  display: flex;
+  align-items: center;
+}
+
+.list li {
+  list-style-type: none;
+  width: 419px;
+  height: 835px;
+  opacity: 0.25;
+  position: absolute;
+  left: 50%;
+  margin-left: -270px;
+  margin-top: 120px;
+  border-radius: 20px;
+  transition: transform 1s, opacity 1s;
+  overflow: hidden;
+}
+
+.list li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list .act {
+  opacity: 1;
+  z-index: 10;
+}
+
+.list .prev,
+.list .next {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.list .prev {
+  transform: translateX(-420px) scale(0.85);
+}
+
+.list .next {
+  transform: translateX(420px) scale(0.85);
+}
+
+.list .hide {
+  transform: translateX(420px) scale(0.85);
+}
+
+.list .new-next {
+  transform: translateX(-420px) scale(0.85);
+}
+
+.list .hide,
+.list .new-next {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.swipe {
+  width: 270px;
+  height: 200px;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.mcs-horizontal-example {
+    width: 1200px; /* Задайте нужную ширину для контейнера */
+    height: 250px; /* Задайте нужную высоту для контейнера */
+    margin-left: 270px; /* Задайте нужную высоту для контейнера */
+    margin-top: 30px; /* Задайте нужную высоту для контейнера */
+    overflow-x: auto; /* Включает горизонтальную прокрутку */
+    white-space: nowrap; /* Запрещает перенос элементов на новую строку */
+}
+
+.mcs-horizontal-example .item {
+    display: inline-block; /* Отображает элементы в строку */
+    width: 300px; /* Ширина каждого слайда */
+    height: 200px; /* Высота каждого слайда */
+    margin-right: 10px; /* Отступ между слайдами */
+    border-radius: 20px;
+
+}
+
+.mcs-horizontal-example .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Чтобы изображения покрывали всю область слайда */
+    border-radius: 20px;
+}
+
+.images-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: -150px;
+            margin-left: 28px;
+            margin-right: 9%;
+        }
+
+        .dog-image {
+            flex: 1;
+            margin-top: 100px;
+            margin-left: 827px;
+        }
+
+         .review-form {
+            margin: 20px auto;
+            margin-top: 50px;
+            margin-left: 400px;
+            padding: 20px;
+            width: 900px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .rating {
+            display: inline-flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            font-size: 30px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .rating label:before {
+            content: "★";
+        }
+
+        .rating input:checked ~ label,
+        .rating:not(:checked) > label:hover,
+        .rating:not(:checked) > label:hover ~ label {
+            color: #db5f23;
+        }
+
+        .rating input:checked + label {
+            color: #ccc;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #db5f23;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #b84d1d;
+        }

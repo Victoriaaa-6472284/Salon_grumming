@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МАГАЗИН</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="SHOP.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="headerLeft">
+                <img src="images/логотип оранжевый.png" alt="Logo" width="332" height="50">
+            <div class="headerRight">
+                <button class="btn" onclick="redirectToPage('Home page.html')"><p><font face="Unbounded Blond">ГЛАВНАЯ</font></p></button>
+                <button class="btn" onclick="redirectToPage('About us page.html')"><p><font face="Unbounded Blond">О САЛОНЕ</font></p></button>
+                <button class="btn" onclick="redirectToPage('Services page.html')"><p><font face="Unbounded Blond">УСЛУГИ</font></p></button>
+                <button class="btn" onclick="redirectToPage('Employees page.html')"><p><font face="Unbounded Blond">МАСТЕРА</font></p></button>
+                <button class="btn" onclick="redirectToPage('Shop page.html')"><p><font face="Unbounded Blond">МАГАЗИН</font></p></button>
+            </div>
+            <div class="cart-icon" onclick="openCart()">
+                 <i class="fas fa-shopping-cart"></i>
+                 <span class="cart-count" id="cart-count">0</span>
+           </div>
+        </div>
+    </header>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Корзина</h2>
+            <div id="cart-items"></div>
+            <p>Итого: <span id="cart-total">0</span> ₽</p>
+        </div>
+    </div>
+
+
+    <div class="products">
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Сумка 2.jpg" alt="Сумка 1" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">АВТОКРЕСЛО FOR PETS</font></h3>
+            <p>14 090₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_сумка1.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Холдер3.jpg" alt="Холдер3" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ХОЛДЕР MONO (GREEN)</font></h3>
+            <p>4 900₽</p>
+
+            <div class="button-container">
+            <button class="details-button" onclick="redirectToPage('Страница товара_холдер3.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Холдер.jpg" alt="Холдер" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ХОЛДЕР MONO (BLACK)</font></h3>
+            <p>3 890₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_холдер.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Шлейка3.jpg" alt="Шлейка1" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ШЛЕЙКА MONO (PINK)</font></h3>
+            <p>6 190₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_холдер1.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Шлейка4.jpg" alt="Шлейка4" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ШЛЕЙКА MONO (BROWN)</font></h3>
+            <p>7 900₽</p>
+
+            <div class="button-container">
+            <button class="details-button" onclick="redirectToPage('Страница товара_Шлейка4.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/игрушка.jpg" alt="игрушка" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ИГРУШКА "ЗАЙКА"</font></h3>
+            <p>990₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_игрушка.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+  <div class="products">
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Лежанка1.jpg" alt="Лежанка1" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ЛЕЖАНКА ESCKIMO (GREY)</font></h3>
+            <p>15 900₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_Лежанка1.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Лежанка 2.jpg" alt="Лежанка 2" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ЛЕЖАНКА VELUTTO</font></h3>
+            <p>9 790₽</p>
+
+            <div class="button-container">
+            <button class="details-button" onclick="redirectToPage('Страница товара_Лежанка 2.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Лежанка 3.jpg" alt="Лежанка 3" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ЛЕЖАНКА WINNIE (WHITE)</font></h3>
+            <p>12 990₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_Лежанка 3.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+  <div class="products">
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Лежанка 4.jpg" alt="Лежанка 4" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ЛЕЖАНКА WINNIE (BLACK)</font></h3>
+            <p>15 900₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_Лежанка 4.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Обложка2.jpg" alt="Обложка2" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ПАСПОРТ MONO</font></h3>
+            <p>6 250₽</p>
+
+            <div class="button-container">
+            <button class="details-button" onclick="redirectToPage('Страница товара_Обложка2.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Адресник.jpg" alt="Адресник" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">АДРЕСНИК FOR PETS</font></h3>
+            <p>3 490₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_Адресник.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+  <div class="products">
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Миска 1.jpg" alt="Миска 1" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">МИСКИ НА ПОДСТАВКЕ</font></h3>
+            <p>11 690₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_Миска 1.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Шлейка5.jpg" alt="Шлейка5" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ОШЕЙНИК MONO (GREEN)</font></h3>
+            <p>3 790₽</p>
+
+            <div class="button-container">
+            <button class="details-button" onclick="redirectToPage('Страница товара_Шлейка5.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/ОШЕЙНИК1.jpg" alt="ОШЕЙНИК1" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ОШЕЙНИК MONO (WHITE)</font></h3>
+            <p>3 790₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_ОШЕЙНИК1.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+  <div class="products">
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Поводок2.jpg" alt="Поводок2" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ПОВОДОК MONO (BLACK)</font></h3>
+            <p>5 890₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_Поводок2.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Поводок3.jpg" alt="Поводок3" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ПОВОДОК MONO (PINK)</font></h3>
+            <p>5 790₽</p>
+
+            <div class="button-container">
+            <button class="details-button" onclick="redirectToPage('Страница товара_Поводок3.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="images/Поводок5.jpg" alt="Поводок5" class="active">
+            </div>
+            <h3><font face="Unbounded Blond">ПОВОДОК MONO (GREEN)</font></h3>
+            <p>5 790₽</p>
+            <div class="button-container">
+                <button class="details-button" onclick="redirectToPage('Страница товара_Поводок5.html')">Узнать подробнее</button>
+                <button class="click-button">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="Script1.js"></script>
+
+</html>

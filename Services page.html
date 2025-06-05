@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>УСЛУГИ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="SERVICES.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="headerLeft">
+            <img src="images/логотип оранжевый.png" alt="Logo" width="332" height="50">
+            <div class="headerRight">
+                <button class="btn" onclick="redirectToPage('Home page.html')"><p><font face="Unbounded Medium">ГЛАВНАЯ</font></p></button>
+                <button class="btn" onclick="redirectToPage('About us page.html')"><p><font face="Unbounded Medium">О САЛОНЕ</font></p></button>
+                <button class="btn" onclick="redirectToPage('Services page.html')"><p><font face="Unbounded Medium">УСЛУГИ</font></p></button>
+                <button class="btn" onclick="redirectToPage('Employees page.html')"><p><font face="Unbounded Medium">МАСТЕРА</font></p></button>
+                <button class="btn" onclick="redirectToPage('Shop page.html')"><p><font face="Unbounded Medium">МАГАЗИН</font></p></button>
+            </div>
+        </div>
+    </header>
+
+    <h1><span style="color:#db5f23">Гарантированный</span> результат</h1>
+    <img src="images/услуги_пудель.png" alt="Пудели" class="custom-image">
+    <h2>Приведем в<span style="color:#db5f23"> порядок</span> вашего питомца</h2>
+
+     <img src="images/фон_услуги.png" alt="Услуги1" class="custom-image2">
+
+ <button class="round-button button-1" onclick="togglePopup('popup-1')">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+
+    <button class="round-button button-2" onclick="togglePopup('popup-2')">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+
+    <button class="round-button button-3" onclick="togglePopup('popup-3')">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+
+    <button class="round-button button-4" onclick="togglePopup('popup-4')">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+
+   
+
+
+    <div class="popup popup-1" id="popup-1">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-1')">×</div>
+            <h1><span style="color:#db5f23">Этапы ухода:</span></h1>
+            <ol>
+                <li><b>Осмотр состояния кожи и шерсти:</b> проверка на наличие паразитов, раздражений или других проблем;</li>
+                <li><b>Расчесывание:</b> удаление колтунов и мертвых волос;</li>
+                <li><b>Мытье:</b> использование специального шампуня для животных;</li>
+                <li><b>Сушка:</b> тщательная сушка шерсти, чтобы избежать переохлаждения;</li>
+                <li><b>Нанесение кондиционера:</b> для улучшения состояния шерсти;</li>
+                <li><b>Финальное расчесывание:</b> придание шерсти ухоженного вида.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="popup popup-2" id="popup-2">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-2')">×</div>
+            <h1><span style="color:#db5f23">Этапы ухода:</span></h1>
+             <ol>
+                <li><b>Осмотр лап:</b> проверка на наличие повреждений или инородных тел;</li>
+                <li><b>Стрижка когтей:</b> аккуратное подрезание когтей специальными щипцами;</li>
+                <li><b>Шлифовка когтей:</b> удаление острых краев;</li>
+                <li><b>Сушка: </b>тщательная сушка шерсти, чтобы избежать переохлаждения;</li>
+                <li><b>Уход за подушечками лап:</b> удаление грязи и смазывание подушечек специальным кремом;</li>
+                <li><b>Обработка межпальцевых пространств:</b> удаление шерсти и грязи.</li>
+            </ol>
+
+        </div>
+    </div>
+
+    <div class="popup popup-3" id="popup-3">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-3')">×</div>
+            <h1><span style="color:#db5f23">Этапы ухода:</span></h1>
+            <ol>
+                <li><b>Осмотр лап:</b> обсуждение с владельцем желаемого результата;</li>
+                <li><b>Подготовка:</b> расчесывание и мытье шерсти</li>
+                <li><b>Стрижка:</b> использование ножниц или машинки для стрижки шерсти;</li>
+                <li><b>Финальная обработка: </b>придание формы и удаление лишних волос;</li>
+                <li><b>Уход за шерстью после стрижки:</b> нанесение кондиционера или спрея для блеска.</li>
+            </ol>
+
+        </div>
+    </div>
+
+    <div class="popup popup-4" id="popup-4">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-4')">×</div>
+            <h1><span style="color:#db5f23">Этапы ухода:</span></h1>
+            <ol>
+                <li><b>Осмотр ушей:</b> проверка на наличие серы, воспалений или паразитов;</li>
+                <li><b>Очистка ушей:</b> использование специального лосьона и ватных дисков;</li>
+                <li><b>Осмотр глаз:</b> проверка на наличие выделений или раздражений;</li>
+                <li><b>Очистка глаз: </b>использование стерильного раствора и ватных дисков;</li>
+                <li><b>Профилактика:</b> нанесение специальных капель или мазей по рекомендации ветеринара.</li>
+            </ol>
+
+        </div>
+    </div>
+<h2>Комфорт и <span style="color:#db5f23"> расслабление</span></h2>
+
+
+<img src="images/фон_услуги2.png" alt="Услуги1" class="custom-image3">
+
+ <button class="round-button button-5" onclick="togglePopup('popup-5')">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+
+    <button class="round-button button-6" onclick="togglePopup('popup-6')">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+
+    <button class="round-button button-7" onclick="togglePopup('popup-7')">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+
+    <button class="round-button button-8" onclick="togglePopup('popup-8')">
+        <i class="fas fa-arrow-right"></i>
+    </button>
+
+<div class="popup popup-5" id="popup-5">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-5')">×</div>
+            <h1><span style="color:#db5f23">Этапы процедуры:</span></h1>
+            <ol>
+                <li><b>Подготовка:</b> подбор специальной лечебной грязи, подходящей для типа кожи питомца;</li>
+                <li><b>Нанесение грязи:</b> грязь наносится на кожу и шерсть питомца, избегая чувствительных зон;</li>
+                <li><b>Массаж:</b> лёгкий массаж для улучшения проникновения полезных веществ;</li>
+                <li><b>Отдых: </b>питомец проводит время в спокойной обстановке, позволяя грязи оказать максимальный эффект;</li>
+                <li><b>Смывание:</b> тщательное смывание грязи с использованием тёплой воды и мягкого шампуня.</li>
+            </ol>
+
+        </div>
+    </div>
+
+    <div class="popup popup-6" id="popup-6">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-6')">×</div>
+            <h1><span style="color:#db5f23">Этапы процедуры:</span></h1>
+            <ol>
+                <li><b>Консультация:</b> оценка состояния здоровья животного;</li>
+                <li><b>Подготовка:</b>  создание безопасной среды с контролируемой температурой;</li>
+                <li><b>Сеанс:</b> кратковременное воздействие холодом на определенные участки тела;</li>
+                <li><b>Наблюдение: </b>контроль реакции животного на холод;</li>
+                <li><b>Завершение:</b> постепенное возвращение к нормальной температуре.</li>
+            </ol>
+
+        </div>
+    </div>
+
+    <div class="popup popup-7" id="popup-7">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-7')">×</div>
+            <h1><span style="color:#db5f23">Этапы процедуры:</span></h1>
+             <ol>
+                <li><b>Подготовка:</b> создание спокойной атмосферы с мягким освещением;</li>
+                <li><b>Выбор аромомасла:</b>  масел, безопасных для животных, которые помогут расслабиться;</li>
+                <li><b>Аромотерапия:</b> использование диффузора для распространения ароматов в помещении;</li>
+                <li><b>Массаж с маслами: </b>лёгкий массаж с использованием масел для улучшения общего состояния питомца;</li>
+                <li><b>Отдых:</b> питомец проводит время в спокойной обстановке, наслаждаясь расслабляющей атмосферой.</li>
+            </ol>
+
+        </div>
+    </div>
+
+    <div class="popup popup-8" id="popup-8">
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup('popup-8')">×</div>
+            <h1><span style="color:#db5f23">Этапы процедуры:</span></h1>
+             <ol>
+                <li><b>Подготовка:</b> наполнение джакузи тёплой водой и добавление средств для купания;</li>
+                <li><b>Купание:</b> питомец помещается в джакузи, где может наслаждаться водными процедурами;</li>
+                <li><b>Гидромассаж:</b> использование специальных форсунок для создания гидромассажа, который помогает расслабить мышцы;</li>
+                <li><b>Ополаскивание: </b>тщательное ополаскивание шерсти для удаления остатков шампуня и средств;</li>
+                <li><b>Сушка:</b> аккуратная сушка шерсти с использованием фена и мягких полотенец.</li>
+            </ol>
+
+        </div>
+    </div>
+    <h2><span style="color:#db5f23"> Акции</span> салона</h2>
+    <img src="images/23.png" alt="Пудели" class="custom-image4">
+
+
+</body>
+ <script>
+        function togglePopup(popupId) {
+            document.getElementById(popupId).classList.toggle("active");
+        }
+
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</html>
